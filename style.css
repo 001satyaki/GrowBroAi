@@ -15,7 +15,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    color: #333;
+    color: #222;
     line-height: 1.6;
 }
 
@@ -91,7 +91,7 @@ nav a:hover {
 
 .hero p {
     font-size: 1.3rem;
-    color: #555;
+    color: #ffffff;
     margin-bottom: 2rem;
 }
 
@@ -100,7 +100,10 @@ nav a:hover {
     color: white;
     border: none;
     padding: 1rem 2.5rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
     border-radius: 8px;
     cursor: pointer;
     box-shadow: 0 8px 16px rgba(0, 119, 255, 0.2);
@@ -245,7 +248,7 @@ footer {
     margin-top: 2rem;
     text-align: center;
     font-size: 0.9rem;
-    color: #777;
+    color: #fff6f6;
 }
 
 .social-icons a {
@@ -259,6 +262,18 @@ footer {
     color: #0077ff;
 }
 
+/* Font Visibility Upgrade */
+h1, h2, h3 {
+    color: #ffffff; /* Darker Heading Color */
+    font-weight: 700; /* Bold Headings */
+    text-shadow: 1px 1px 2px rgb(255, 255, 255); /* Soft Black Glow */
+  }
+  
+  p, li {
+    color: #ffffff; /* Slightly Darker Paragraph Text */
+    text-shadow: 0.5px 0.5px 1px rgb(255, 255, 255); /* Tiny shadow for better clarity */
+  }
+  
 /* Responsive */
 @media (max-width: 768px) {
     .features-grid, .services-grid, .portfolio-grid, .pricing-grid, .reviews-grid, .footer-content {
