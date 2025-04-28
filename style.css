@@ -1,292 +1,273 @@
-/* Reset default */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  html {
+html {
     scroll-behavior: smooth;
-  }
+}
   
-  body {
+body {
     font-family: 'Poppins', sans-serif;
-    background: #ffffff;
-    color: #333333;
+    background: url('your-background.jpg') no-repeat center center/cover;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #333;
     line-height: 1.6;
-  }
-  
-  /* Navbar */
-  header {
+}
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+
+/* Header */
+header {
     background: #ffffff;
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     position: sticky;
     top: 0;
     z-index: 1000;
-  }
-  
-  header .logo h2 {
-    font-size: 1.8rem;
-    color: #1a1a1a;
-  }
-  
-  header .logo .highlight {
+}
+
+header .logo h2 {
+    font-size: 2rem;
+    color: #111;
+}
+
+.highlight {
     color: #0077ff;
-  }
-  
-  nav a {
+}
+
+nav a {
     margin: 0 1rem;
-    text-decoration: none;
     color: #333;
-    font-weight: 500;
-    transition: all 0.3s ease;
-  }
-  
-  nav a:hover {
-    color: #0077ff;
-  }
-  
-  .login-btn {
-    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #c084fc;
+}
+
+.login-btn {
     background: #0077ff;
+    padding: 0.5rem 1.2rem;
+    color: white;
     border: none;
-    color: #fff;
-    font-weight: bold;
     border-radius: 5px;
-    transition: background 0.3s;
+    font-weight: bold;
     cursor: pointer;
-  }
-  
-  .login-btn:hover {
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
     background: #005fcc;
-  }
-  
-  /* Hero Section */
-  .hero {
+}
+
+/* Hero Section */
+.hero {
     text-align: center;
-    padding: 6rem 5% 4rem;
-    background: linear-gradient(to bottom right, #f9fcff, #eef6ff);
-  }
-  
-  .hero h1 {
+    padding: 8rem 5% 6rem;
+}
+
+.hero h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #111;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
+}
+
+.hero p {
+    font-size: 1.3rem;
     color: #555;
     margin-bottom: 2rem;
-  }
-  
-  .cta-btn {
+}
+
+.cta-btn {
     background: #0077ff;
-    color: #fff;
-    padding: 0.8rem 2rem;
-    font-size: 1rem;
+    color: white;
     border: none;
-    border-radius: 5px;
-    transition: background 0.3s;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+    border-radius: 8px;
     cursor: pointer;
-  }
-  
-  .cta-btn:hover {
+    box-shadow: 0 8px 16px rgba(0, 119, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.cta-btn:hover {
     background: #005fcc;
-  }
-  
-  /* Features Section */
-  .features {
+    transform: scale(1.08);
+    box-shadow: 0 0 20px #0077ff, 0 0 30px #0077ff, 0 0 40px #0077ff;
+}
+
+
+/* Features Section */
+.features {
     padding: 4rem 5%;
     text-align: center;
-  }
-  
-  .features-grid {
+}
+
+.features-grid {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
     flex-wrap: wrap;
-  }
-  
-  .feature {
-    background: #f4f7fc;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Updated Box Style */
+.feature, .service-card, .portfolio-card, .pricing-card, .review {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    border-radius: 10px;
-    width: 250px;
     transition: transform 0.3s;
-  }
-  
-  .feature:hover {
+}
+
+/* Small Card Specific Tweaks */
+.feature:hover, .service-card:hover, .portfolio-card:hover, .pricing-card:hover, .review:hover {
     transform: translateY(-8px);
-  }
-  
-  .icon {
+}
+
+.feature i, .service-card i {
     font-size: 2rem;
     margin-bottom: 1rem;
     color: #0077ff;
-  }
-  
-  /* Services Section */
-  .services {
+}
+
+/* Services Section */
+.services {
     padding: 4rem 5%;
     text-align: center;
-  }
-  
-  .services-grid {
+}
+
+.services-grid {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
     flex-wrap: wrap;
-  }
-  
-  .service-card {
-    background: #f4f7fc;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 250px;
-    transition: transform 0.3s;
-  }
-  
-  .service-card:hover {
-    transform: translateY(-8px);
-  }
-  
-  /* Portfolio Section */
-  .portfolio {
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Portfolio Section */
+.portfolio {
     padding: 4rem 5%;
     text-align: center;
-  }
-  
-  .portfolio-grid {
+}
+
+.portfolio-grid {
     display: flex;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
-  
-  .portfolio-card {
-    background: #f4f7fc;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
-  }
-  
-  .portfolio-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .portfolio-card img {
+}
+
+.portfolio-card video {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 10px;
     margin-bottom: 1rem;
-  }
-  
-  /* Pricing Section */
-  .pricing {
+}
+
+/* Pricing Section */
+.pricing {
     padding: 4rem 5%;
     text-align: center;
-  }
-  
-  .pricing-grid {
+}
+
+.pricing-grid {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
     flex-wrap: wrap;
-  }
-  
-  .pricing-card {
-    background: #f4f7fc;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 250px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
-  }
-  
-  .pricing-card:hover {
-    transform: translateY(-8px);
-  }
-  
-  .best-value {
-    background: #eaf4ff;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.best-value {
     border: 2px solid #0077ff;
-  }
-  
-  /* Reviews Section */
-  .reviews {
+}
+
+/* Reviews Section */
+.reviews {
     padding: 4rem 5%;
     text-align: center;
-  }
-  
-  .reviews-grid {
+}
+
+.reviews-grid {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
     flex-wrap: wrap;
-  }
-  
-  .review {
-    background: #f4f7fc;
-    padding: 2rem;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  }
-  
-  /* Footer */
-  footer {
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
     background: #111;
     color: #ddd;
-    padding: 2rem 5%;
-  }
-  
-  .footer-content {
+    padding: 3rem 5%;
+}
+
+.footer-content {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: space-between;
-  }
-  
-  .footer-section h4, .footer-section h3 {
+}
+
+.footer-section h4, .footer-section h3 {
     margin-bottom: 1rem;
-  }
-  
-  .footer-section a {
+}
+
+.footer-section a {
     color: #ccc;
     text-decoration: none;
     display: block;
     margin-bottom: 0.5rem;
-  }
-  
-  .footer-section a:hover {
+}
+
+.footer-section a:hover {
     color: #fff;
-  }
-  
-  .footer-bottom {
+}
+
+.footer-bottom {
     margin-top: 2rem;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     color: #777;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #0077ff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
     .features-grid, .services-grid, .portfolio-grid, .pricing-grid, .reviews-grid, .footer-content {
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  
+
     nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
-  }
-  
+}
