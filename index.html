@@ -1,154 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GrowBroAi - AI Boosted Services</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GrowBroAi | AI-Powered Content Creation, UI/UX Design, Automation Services</title>
+  <meta name="description" content="GrowBroAi offers AI-powered services including content creation, UI/UX design, automation setups, and more to supercharge your business growth.">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <!-- FontAwesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+<div id="particles-js"></div>
+
 <body>
-    <header>
-        <div class="logo"><h2>GrowBro<span class="highlight">Ai</span></h2></div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#pricing">Pricing</a>
-            <a href="#reviews">Reviews</a>
-            <button class="login-btn">Login</button>
-        </nav>
-    </header>
+  <!-- Header -->
+  <header id="navbar">
+    <div class="logo"><h2>GrowBro<span class="highlight">Ai</span></h2></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <button class="login-btn">Login</button>
+    </nav>
+  </header>
 
-    <section class="hero" id="home">
-        <h1>GrowBroAi</h1>
-        <p>AI-powered services to supercharge your business growth</p>
-        <button class="cta-btn">Explore Services</button>
-    </section>
+  <!-- Hero Section -->
+  <section class="hero" id="home" data-aos="fade-up">
+    <h1>GrowBroAi</h1>
+    <p>AI-powered services to supercharge your business growth</p>
+    <button class="cta-btn">Explore Services</button>
+  </section>
 
-    <section class="features">
-        <div class="features-grid">
-            <div class="feature">
-                <i class="icon">⏱️</i>
-                <h3>Delivered in 24 Hours</h3>
-            </div>
-            <div class="feature">
-                <i class="icon">⚙️</i>
-                <h3>Backed by AI Expertise</h3>
-            </div>
-            <div class="feature">
-                <i class="icon">💲</i>
-                <h3>Low Cost and Efficient</h3>
-            </div>
-        </div>
-    </section>
+  <!-- Features Section -->
+  <section class="features" data-aos="fade-up">
+    <div class="features-grid">
+      <div class="feature">
+        <i class="fas fa-stopwatch"></i>
+        <h3>Delivered in 24 Hours</h3>
+      </div>
+      <div class="feature">
+        <i class="fas fa-cogs"></i>
+        <h3>Backed by AI Expertise</h3>
+      </div>
+      <div class="feature">
+        <i class="fas fa-dollar-sign"></i>
+        <h3>Low Cost and Efficient</h3>
+      </div>
+    </div>
+  </section>
 
-    <section class="services" id="services">
-        <h2>Services We Provide</h2>
-        <div class="services-grid">
-            <div class="service-card">
-                <i class="icon">📝</i>
-                <h3>Content Creation</h3>
-                <p>Create blog posts, social media posts, newsletters, and more.</p>
-            </div>
-            <div class="service-card">
-                <i class="icon">🖥️</i>
-                <h3>Design and Development</h3>
-                <p>UI/UX design, website development, and branding solutions.</p>
-            </div>
-            <div class="service-card">
-                <i class="icon">🤖</i>
-                <h3>Automation</h3>
-                <p>Automation for Instagram reels, YouTube, and Gmail workflows.</p>
-            </div>
-            <div class="service-card">
-                <i class="icon">📈</i>
-                <h3>Tech Odd Jobs</h3>
-                <p>Help with PPTs, visualizations, AI photo mockups, and assignments.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Services Section -->
+  <section class="services" id="services" data-aos="fade-up">
+    <h2>Services We Provide</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fas fa-pen-nib"></i>
+        <h3>Content Creation</h3>
+        <p>Blogs, social media posts, newsletters, and more.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Design & Development</h3>
+        <p>Modern UI/UX design, website development, branding.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-robot"></i>
+        <h3>Automation</h3>
+        <p>Automation for Instagram, YouTube, and Gmail.</p>
+      </div>
+      <div class="service-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Tech Odd Jobs</h3>
+        <p>PPTs, visualizations, AI photo mockups and more.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="portfolio" id="portfolio">
-        <h2>Portfolio</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-card">
-                <img src="portfolio1.jpg" alt="Content Creation Sample">
-                <h3>Content Creation</h3>
-                <p>Sample of top performing blog posts and social media content.</p>
-            </div>
-            <div class="portfolio-card">
-                <img src="portfolio2.jpg" alt="UI/UX Design Sample">
-                <h3>UI/UX Design</h3>
-                <p>Sample of modern, responsive UI/UX web designs for businesses.</p>
-            </div>
-        </div>
-    </section>
+  <!-- Portfolio Section -->
+  <section class="portfolio" id="portfolio" data-aos="fade-up">
+    <h2>Portfolio</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-card">
+        <video controls loading="lazy" poster="content-creation-thumbnail.jpg">
+          <source src="content-creation.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Content Creation</h3>
+        <p>Sample projects showcasing blogs and social media content.</p>
+      </div>
+      <div class="portfolio-card">
+        <video controls loading="lazy" poster="uiux-design-thumbnail.jpg">
+          <source src="uiux-design.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>UI/UX Design</h3>
+        <p>Modern, responsive web designs for startups and businesses.</p>
+      </div>
+    </div>
+  </section>
 
-    <section class="pricing" id="pricing">
-        <h2>Pricing</h2>
-        <div class="pricing-grid">
-            <div class="pricing-card">
-                <h3>Content Creation</h3>
-                <ul>
-                    <li>Blog post - $15</li>
-                    <li>Social media post - $3</li>
-                    <li>Newsletter - $12</li>
-                    <li>Copywriting - $2</li>
-                </ul>
-            </div>
-            <div class="pricing-card best-value">
-                <h3>UI/UX Design</h3>
-                <ul>
-                    <li>Landing page - $50</li>
-                    <li>Mobile app - $30</li>
-                    <li>Wireframe - $20</li>
-                </ul>
-            </div>
-        </div>
-    </section>
+  <!-- Pricing Section -->
+  <section class="pricing" id="pricing" data-aos="fade-up">
+    <h2>Pricing</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3>Content Creation</h3>
+        <ul>
+          <li>Blog post - $15</li>
+          <li>Social media post - $3</li>
+          <li>Newsletter - $12</li>
+          <li>Copywriting - $2</li>
+        </ul>
+      </div>
+      <div class="pricing-card best-value">
+        <h3>UI/UX Design</h3>
+        <ul>
+          <li>Landing page - $50</li>
+          <li>Mobile app - $30</li>
+          <li>Wireframe - $20</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <section class="reviews" id="reviews">
-        <h2>What Our Customers Say</h2>
-        <div class="reviews-grid">
-            <div class="review">
-                <p>"The articles you provided were top-notch! Audience engagement boosted!"</p>
-                <h4>Rachel - Content Creation</h4>
-            </div>
-            <div class="review">
-                <p>"The UI redesign was exactly what I envisioned. Nailed the user experience!"</p>
-                <h4>Wan - Design and Development</h4>
-            </div>
-            <div class="review">
-                <p>"Super impressed with the landing page. Can't wait to work again!"</p>
-                <h4>Lauren - Design and Development</h4>
-            </div>
-        </div>
-    </section>
+  <!-- Customer Reviews -->
+  <section class="reviews" id="reviews" data-aos="fade-up">
+    <h2>What Our Customers Say</h2>
+    <div class="reviews-grid">
+      <div class="review">
+        <p>"Top-notch articles! Audience engagement boosted!"</p>
+        <h4>Rachel - Content Creation</h4>
+      </div>
+      <div class="review">
+        <p>"Exactly what I envisioned. Nailed the UX!"</p>
+        <h4>Wan - UI/UX Design</h4>
+      </div>
+      <div class="review">
+        <p>"Super impressive landing page. Would recommend!"</p>
+        <h4>Lauren - UI/UX Design</h4>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section about">
-                <h3>GrowBroAi</h3>
-                <p>AI-boosted services tailored for your growth.</p>
-            </div>
-            <div class="footer-section links">
-                <h4>Links</h4>
-                <a href="#home">Home</a>
-                <a href="#services">Services</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#pricing">Pricing</a>
-            </div>
-            <div class="footer-section contact">
-                <h4>Contact</h4>
-                <p>Email: support@growbroai.com</p>
-                <p>Follow Us: Facebook | Instagram | LinkedIn</p>
-            </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h3>GrowBroAi</h3>
+        <p>AI-boosted services tailored for your daily growth.</p>
+      </div>
+      <div class="footer-section links">
+        <h4>Links</h4>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#pricing">Pricing</a>
+      </div>
+      <div class="footer-section contact">
+        <h4>Contact</h4>
+        <p>Email: support@growbroai.com</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-facebook"></i></a>
         </div>
-        <div class="footer-bottom">
-            <p>© 2025 GrowBroAi. All rights reserved.</p>
-        </div>
-    </footer>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 GrowBroAi. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Animation Script -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+<script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 40,
+                "density": {
+                    "enable": true,
+                    "value_area": 800
+                }
+            },
+            "color": {
+                "value": "#c4d7f2"
+            },
+            "shape": {
+                "type": "circle"
+            },
+            "opacity": {
+                "value": 0.5
+            },
+            "size": {
+                "value": 3
+            },
+            "move": {
+                "enable": true,
+                "speed": 1
+            }
+        }
+    });
+    </script>
+    
 </body>
 </html>
