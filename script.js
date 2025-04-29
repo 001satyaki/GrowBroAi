@@ -1,23 +1,22 @@
-// Smooth scrolling for nav links
-document.addEventListener("DOMContentLoaded", function () {
-    const links = document.querySelectorAll("nav a[href^='#']");
-    
-    links.forEach(link => {
-      link.addEventListener("click", function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute("href"));
-        target.scrollIntoView({ behavior: "smooth" });
-      });
-    });
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks = document.getElementById('nav-links');
+
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open'); // NOT collapsed
+    navLinks.classList.remove('collapsed');
   });
-  
-  // Sticky header background on scroll
-  window.addEventListener("scroll", function() {
-    const navbar = document.getElementById("navbar");
-    if (window.scrollY > 50) {
-      navbar.style.boxShadow = "0 2px 8px rgba(0,0,0,0.1)";
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+      navLinks.classList.remove('collapsed');
+      navLinks.classList.remove('open');
+      navLinks.style.display = 'flex';
     } else {
-      navbar.style.boxShadow = "none";
+      navLinks.classList.add('collapsed');
+      navLinks.style.display = 'none';
     }
   });
+});
+
   
