@@ -27,22 +27,28 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
-<div id="particles-js"></div>
+
 
 <body>
-  <!-- Header -->
+  <div id="particles-js"></div>
+
   <header id="navbar">
-    <div class="logo"><h2>GrowBro<span class="highlight">Ai</span></h2></div>
-    <nav>
-      <a href="home.html">Home</a>
+    <div class="logo">
+      <h2>GrowBro<span class="highlight">Ai</span></h2>
+    </div>
+    <button id="menu-toggle" class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </button>
+    <nav id="nav-links" class="collapsed">
+      <a href="#home">Home</a>
       <a href="#services">Services</a>
       <a href="#portfolio">Portfolio</a>
-      <a href="pricing.html">Pricing</a>
+      <a href="#pricing">Pricing</a>
       <a href="#reviews">Reviews</a>
-      <a href="login.html" class="login-btn">Login</a>
-
+      <button class="login-btn" onclick="location.href='login.html'">Login</button>
     </nav>
   </header>
+  
   <hr style="border: none; height: 1px; background: #ccc; width: 100%;">
 
   <!-- Hero Section -->
