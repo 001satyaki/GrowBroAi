@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GrowBroAi - Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: url('your-dark-background.jpg') no-repeat center center/cover;
+      background-color: #0b0b1e;
+      color: #ffffff;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+    .logo {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+    .logo span {
+      color: #4f86ff;
+    }
+    h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      color: #ccc;
+    }
+    .btn {
+      background: #4f86ff;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 12px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      margin: 0.5rem;
+      box-shadow: 0 4px 12px rgba(79, 134, 255, 0.4);
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(79, 134, 255, 0.6);
+    }
+    .secondary-btn {
+      background: transparent;
+      color: #ffffff;
+      border: 1px solid #4f86ff;
+    }
+    .links {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    .links a {
+      color: #4f86ff;
+      margin: 0 0.5rem;
+      text-decoration: none;
+    }
+    .stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 1.5rem;
+      border-radius: 16px;
+      min-width: 200px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      backdrop-filter: blur(8px);
+    }
+    .card h3 {
+      font-size: 1.5rem;
+      color: #fff;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    @media (max-width: 768px) {
+      h1 { font-size: 1.8rem; }
+      .btn { padding: 0.8rem 1.5rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">GrowBro<span>Ai</span></div>
+  <h1>Welcome Back</h1>
+  <p>Explore our AI-powered services</p>
+  <div>
+    <button class="btn">Browse Services</button>
+    <button class="btn secondary-btn">View Portfolio</button>
+  </div>
+  <div class="stats">
+    <div class="card">
+      <h3>24</h3>
+      <p>Projects Delivered</p>
+    </div>
+    <div class="card">
+      <h3>18</h3>
+      <p>Active Clients</p>
+    </div>
+    <div class="card">
+      <h3>4.9</h3>
+      <p>Avg. Client Rating</p>
+    </div>
+  </div>
+  <div class="links">
+    <a href="#">Settings</a>|
+    <a href="#">Logout</a>
+  </div>
+</body>
+</html>
